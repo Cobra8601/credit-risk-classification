@@ -18,10 +18,6 @@ Using bulleted lists, describe the accuracy scores and the precision and recall 
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+Regarding high-risk loans, the model is able to predict which loans were approaching default with 85% precision. Ability of the model to correctly identify a loan as high-risk, is 91%. This may be due to only 3% of the data being labeled as high-risk, putting the model at a disadvantage as to how a high-risk loan is defined for training. Regarding healthy loans, the data show that the model has a 100% precision rate for predicting healthy loans, while correctly identifying healthy loans 99% of the time.
 
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
-* Regarding high-risk loans, the model is able to predict which loans were approaching default with 85% precision. Ability of the model to correctly identify a loan as high-risk, is 91%. This may be due to only 3% of the data being labeled as high-risk, putting the model at a disadvantage as to how a high-risk loan is defined for training. Regarding healthy loans, the data show that the model has a 100% precision rate for predicting healthy loans, while correctly identifying healthy loans 99% of the time.
+Recommendation: All scores in the model are above 75%, indicating strong reliability and commendable performance. Improvement in the model may occur as further healthy loans are accrued and the machine acquires additional data to discriminate. However, with a 100% accuracy, that is not of current concern. One could argue which is more important to detect, (healthy vs at-risk). Collecting more data on healthy loans further informs the model of what a healthy loan entails, therefore an at-risk loan can be detected more readily as it is seen as more foreign. In order to capture the majority of at-risk loans, the focus should be on recall (whether or not the model can detect an at risk loan), over precision (whether or not the loan actually is at-risk). Use of the model is recommended for use at this company.
